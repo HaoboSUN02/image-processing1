@@ -1,0 +1,35 @@
+\documentclass[a4]{article}
+\usepackage{gnuplottex}
+\usepackage{graphicx}
+\usepackage{csvsimple}
+\usepackage{subcaption}
+\usepackage{amsmath}
+
+\title{COMP27112 Lab3}
+\author{}
+\begin{document}
+\maketitle
+
+\section{Solutions}
+1. Otus's method sometimes is not successful when thresholding many images. It relies on the assumption of the distribution of pixel intensities of the image. if the image has many mode or uneven light, this method will not work as espected.
+
+2. One way to address any problems is to using adaptive thresholding. This calculates the local threshold for each pixel and it could be more effective for uneven lighting conditions. Another way is to use multiple methods like Otsu's method to have a better performance.
+
+3.Metrics for assessing the success of thresholding include precision, recall, and intersection over union. These metrics compare the thresholded image to a truth image. Precision represents the proportion of true positives of all positive predictions. Recall represents the proportion of true positives out of all truth positives. Intersection over union represents the intersection between the thresholded and truth images divided by their union. Those metrics can be used to compare how effective are the different thresholding methods and tune the parameters of the thresholding algorithm.
+	
+	
+
+
+
+
+
+ 
+
+
+\appendix
+
+%% And raw data or code scripts you want to present should be included as appendices.
+
+\end{document}
+
+
